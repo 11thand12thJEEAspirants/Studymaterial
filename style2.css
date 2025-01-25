@@ -1,0 +1,286 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #7313f9, #bc0090);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.notes-list .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgba(201, 2, 125, 0.778);
+    background-color: rgba(21, 200, 45, 0.889);
+}
+
+footer {
+    position: relative;
+    bottom: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+.back-home {
+    margin-top: 20px;
+}
+/* Additional styles for the owner photos */
+.owner-photos {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Increased gap between the images */
+    margin: 30px 0;
+}
+
+.owner-photo {
+    width: 200px; /* Increased size of the images */
+    height: 200px; /* Increased size of the images */
+    border-radius: 50%; /* Keeps the photos circular */
+    object-fit: cover;
+    box-shadow: 2px 2px 10px rgba(27, 255, 2, 0.786);
+}
+
+.owner-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgb(180, 11, 118);
+}
+/* New section styling */
+.section {
+    margin: 30px 0;
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#formula-sheet, #short-notes, #toppyqs {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#formula-sheet .btn, #short-notes .btn, #toppyqs .btn {
+    width: 220px;
+    margin: 10px;
+}
+
+
+.formulaphy{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 300px;
+height: 500px;
+background-color: rgb(8, 52, 214);
+color: #bc0090;
+
+
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .notes-list {
+        width: 100%;
+    }
+}
+/* New section for owner photos */
+#owner-photos {
+    margin: 30px 0;
+    text-align: center;
+}
+
+#owner-photos h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.owner-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.owner-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+
+.owner-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.owner-photo p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: white;
+}
+@media (max-width: 600px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+  .owner-img {
+    width: 200px; /* Increased from 150px */
+    height: 200px; /* Increased from 150px */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.4);
+}
+
+.owner-photo {
+    max-width: 220px; /* Adjusted to fit larger image size */
+}
+#owner-photos {
+    margin-bottom: 50px; /* Increased margin to create separation */
+}
+
+.buttons {
+    margin-top: 50px; /* Ensure buttons are not too close to the above section */
+}
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+.owner-photo p {
+    margin-top: 10px;
+    font-size: 1.5rem; /* Increased font size */
+    color: white;
+    font-family: 'Playfair Display', serif; /* Beautiful font */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better contrast */
+}
+h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Banner style */
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 900px; /* Set a max width for the banner */
+    width: 100%;
+}
+
+/* Date block style */
+.date {
+    width: 180px; /* Reduced width for a more compact look */
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.date:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.date h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Shift link styles */
+.shifts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.shift {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #007bff; /* Removed yellow color */
+    padding: 10px;
+    background-color: #e7f3ff;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.shift:hover {
+    background-color: #0056b3;
+    color: white;
+    transform: scale(1.05);
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Cards</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #7313f9, #bc0090);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      padding: 20px;
+      max-width: 700px;
+    }
+
+    .card {
+      background-color: #1b1f2a;
+      padding: 25px;
+      border-radius: 15px;
+      text-align: center;
+      position: relative;
+      text-decoration: none; /* Remove underline for links */
+      color: white; /* Ensure text is visible */
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+
+    .card .topics {
+      font-size: 16px;
+      font-weight: bold;
+      color: #f0e68c; /* Bright yellowish color for visibility */
+    }
+
+    .card .icon {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: white;
+      color: #1b1f2a;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    /* Colors for cards */
+    .card.blue {
+      background-color: #3579ff;
+    }
+
+    .card.purple {
+      background-color: #a442f5;
+    }
+
+    .card.orange {
+      background-color: #f56a42;
+    }
+
+    .card.green {
+      background-color: #42f56b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="aldehydes-ketones.html" class="card blue" aria-label="Learn about Aldehydes and Ketones">
+      <h2>Aldehydes and Ketones</h2>
+      <p class="topics">6 Topics</p>
+      <div class="icon">O</div>
+    </a>
+    <a href="carboxylic-acid-derivatives.html" class="card purple" aria-label="Learn about Carboxylic Acid Derivatives">
+      <h2>Carboxylic Acid Derivatives</h2>
+      <p class="topics">8 Topics</p>
+      <div class="icon">OH</div>
+    </a>
+    <a href="amines.html" class="card orange" aria-label="Learn about Amines">
+      <h2>Amines</h2>
+      <p class="topics">4 Topics</p>
+      <div class="icon">NH</div>
+    </a>
+    <a href="general-organic-chemistry.html" class="card orange" aria-label="Learn about General Organic Chemistry">
+      <h2>General Organic Chemistry</h2>
+      <p class="topics">7 Topics</p>
+      <div class="icon">Hex</div>
+    </a>
+    <a href="biomolecules.html" class="card green" aria-label="Learn about Biomolecules">
+      <h2>Biomolecules</h2>
+      <p class="topics">6 Topics</p>
+      <div class="icon">B</div>
+    </a>
+    <a href="polymers.html" class="card blue" aria-label="Learn about Polymers">
+      <h2>Polymers</h2>
+      <p class="topics">5 Topics</p>
+      <div class="icon">P</div>
+    </a>
+  </div>
+</body>
+</html>

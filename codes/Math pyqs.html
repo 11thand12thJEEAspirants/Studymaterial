@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Cards</title>
+  <style>
+   body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #7313f9, #bc0090);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+  max-width: 700px;
+  width: 100%;
+}
+
+/* Cards Style */
+.card {
+  background-color: #1b1f2a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.card .topics {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f0e68c;
+}
+
+.card .icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: #1b1f2a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Card Color Variations */
+.card.blue {
+  background-color: #e03c14db;
+}
+
+.card.purple {
+  background-color: #c61393;
+}
+
+.card.orange {
+  background-color: #5ca319da;
+}
+
+.card.green {
+  background-color: #cfa219d0;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr; /* Stack cards on small screens */
+  }
+
+  .card {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+
+  .card h2 {
+    font-size: 18px; /* Adjust font size */
+  }
+
+  .card .topics {
+    font-size: 14px; /* Adjust topics font size */
+  }
+
+  .card .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 16px; /* Resize icon */
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 15px; /* Further reduce padding */
+  }
+
+  .card h2 {
+    font-size: 16px; /* Adjust font size further for very small screens */
+  }
+
+  .card .topics {
+    font-size: 12px; /* Reduce font size for small screens */
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="set-pyq.html" class="card blue" aria-label="Learn about Unit,Dimension And Measurement">
+        <h2>Sets And Relations</h2>
+       
+        
+      </a>
+      <a href="relation-and-function-pyq.html" class="card purple" aria-label="Learn about Motion In One Dimension">
+        <h2>Relation and Function</h2>
+        
+        
+      </a>
+      <a href="Differentation.html" class="card orange" aria-label="Motion In Two Dimension">
+        <h2>Differentation</h2>
+      
+      </a>
+      <a href="Application Of Derivative.html" class="card orange" aria-label="Learn about Newtons Lows Of Motion">
+        <h2>Application Of Derivative</h2>
+     
+      
+      </a>
+      <a href="Indefinite Integral.html" class="card green" aria-label="Learn about Friction">
+        <h2>Indefinite Integral</h2>
+  
+    
+      </a>
+      <a href="Definite Integrals.html" class="card blue" aria-label="Learn about Work,Energy,Power and Collision">
+        <h2>Definite Integrals</h2>
+      
+      
+      </a>
+      <a href="Differential Equations.html" class="card purple" aria-label="Learn about Rotational Motion">
+          <h2>Differential Equations</h2>
+          
+        
+        </a>
+        <a href="Vector-algebra-pyq.html" class="card orange" aria-label="Gravitation">
+          <h2>Vector</h2>
+         
+        </a>
+        <a href="Three-Dimensional-Geometry-pyq.html" class="card orange" aria-label="Learn about Kintetic Theory Of Gases">
+          <h2>3D Geometry</h2>
+       
+        </a>
+        <a href="Determinant.html" class="card green" aria-label="Learn about Thermal Expension, Thermometry and Calometry">
+          <h2>Determinant</h2>
+    
+        
+        </a>
+  
+        <a href="Complex Number.html" class="card blue" aria-label="Learn about Thermodynamics Notes">
+          <h2>Complex Number</h2>
+        
+       
+        </a>
+        <a href="Progression.html" class="card purple" aria-label="Learn about Transformation Of Heat">
+            <h2>Progression</h2>
+            
+       
+          </a>
+          <a href="Qadratic Equation.html" class="card orange" aria-label="S.H.M">
+            <h2>Qadratic Equation</h2>
+           
+          </a>
+
+          <a href="Permutation.html" class="card orange" aria-label="Learn about Wave Motion">
+            <h2>Permutation</h2>
+         
+           
+          </a>
+
+          <a href="Sequance-and-Series-pyq.html" class="card orange" aria-label="Learn about Wave Motion">
+            <h2>Sequence and Series</h2>
+         
+           
+          </a>
+          <a href="Straight-line-_-Pair-of-lines-pyq.html" class="card green" aria-label="Learn about Current and Heating Effect Of Current">
+            <h2>Straight Line</h2>
+      
+          
+          </a>
+          <a href="Pair Of Straight Line notes.html" class="card blue" aria-label="Learn about Electrostatics">
+              <h2>Pair Of Straight Line</h2>
+            
+            
+            </a>
+            <a href="Circle System notes.html" class="card purple" aria-label="Learn about EMI and AC">
+                <h2>Circle System notes</h2>
+                
+              
+              </a>
+              <a href="Conic Section notes.html" class="card orange" aria-label="Flueid Mechanics">
+                <h2>Conic Section</h2>
+               
+              </a>
+              
+              <a href="Trignometric-Function-pyq.html" class="card green" aria-label="Learn about Modern Physics">
+                <h2>Trignometrical Function</h2>
+          
+              
+              </a>
+              <a href="Probability notes.html" class="card orange" aria-label="Learn about Optics">
+                  <h2>Probability</h2>
+               
+                </a>
+                <a href="Statics-pyq.html" class="card green" aria-label="Learn about Modern Physics">
+                  <h2>Statics</h2>
+            
+                
+                </a>
+ 
+ 
+
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Cards</title>
+  <style>
+   body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #7313f9, #bc0090);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid for responsiveness */
+  gap: 30px;
+  padding: 20px;
+  max-width: 90vw; /* Max width of the container for responsiveness */
+  width: 100%;
+}
+
+.card {
+  background-color: #1b1f2a;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+
+.card .topics {
+  font-size: 16px;
+  font-weight: bold;
+  color: #f0e68c; /* Bright yellowish color for visibility */
+}
+
+.card .icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: #1b1f2a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Colors for cards */
+.card.blue {
+  background-color: #3579ff;
+}
+
+.card.purple {
+  background-color: #c61393;
+}
+
+.card.orange {
+  background-color: #1b51bec7;
+}
+
+.card.green {
+  background-color: #cfa219;
+}
+
+/* Responsive design for different screen sizes */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Single column layout on smaller screens */
+  }
+  .card h2 {
+    font-size: 18px; /* Smaller text size */
+  }
+  .card .topics {
+    font-size: 14px;
+  }
+  .card .icon {
+    width: 35px;
+    height: 35px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    grid-template-columns: 1fr; /* Single column layout on very small screens */
+    padding: 10px;
+  }
+  .card {
+    padding: 15px; /* Reduce padding for small screens */
+  }
+  .card h2 {
+    font-size: 16px; /* Adjust font size */
+  }
+  .card .topics {
+    font-size: 12px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="Atomic Structure.html" class="card blue" aria-label="Learn about Unit,Dimension And Measurement">
+        <h2>Atomic Structure</h2>
+       
+        
+      </a>
+      <a href="Chemical Bonding.html" class="card purple" aria-label="Learn about Motion In One Dimension">
+        <h2>Chemical Bonding</h2>
+        
+        
+      </a>
+      <a href="Solution.html" class="card orange" aria-label="Motion In Two Dimension">
+        <h2>Solution</h2>
+      
+      </a>
+      <a href="Solid State.html" class="card orange" aria-label="Learn about Newtons Lows Of Motion">
+        <h2>Solid State</h2>
+     
+      
+      </a>
+      <a href="Gaseous State.html" class="card green" aria-label="Learn about Friction">
+        <h2>Gaseous State</h2>
+  
+    
+      </a>
+      <a href="Nuclear Chemistry.html" class="card blue" aria-label="Learn about Work,Energy,Power and Collision">
+        <h2>Nuclear Chemistry</h2>
+      
+      
+      </a>
+      <a href="Chemical Equilibrium.html" class="card purple" aria-label="Learn about Rotational Motion">
+          <h2>Chemical Equilibrium</h2>
+          
+        
+        </a>
+        <a href="Ionic Equilibrium.html" class="card orange" aria-label="Gravitation">
+          <h2>Ionic Equilibrium</h2>
+         
+        </a>
+        <a href="Thermodynamics & Thermochemistry.html" class="card orange" aria-label="Learn about Kintetic Theory Of Gases">
+          <h2>Thermodynamics & Thermochemistry</h2>
+       
+        </a>
+        <a href="Chemical Kinetics.html" class="card green" aria-label="Learn about Thermal Expension, Thermometry and Calometry">
+          <h2>Chemical Kinetics</h2>
+    
+        
+        </a>
+  
+        <a href="Electro Chemistry.html" class="card blue" aria-label="Learn about Thermodynamics Notes">
+          <h2>Electro Chemistry</h2>
+        
+       
+        </a>
+        <a href="Redox Reaction.html" class="card purple" aria-label="Learn about Transformation Of Heat">
+            <h2>Redox Reaction</h2>
+            
+       
+          </a>
+          <a href="Surface Chemistry.html" class="card orange" aria-label="S.H.M">
+            <h2>Surface Chemistry</h2>
+           
+          </a>
+          <a href="Chemical Periodicity.html" class="card orange" aria-label="Learn about Wave Motion">
+            <h2>Chemical Periodicity</h2>
+         
+           
+          </a>
+          <a href="Genral Principle of Extraction of Metal.html" class="card green" aria-label="Learn about Current and Heating Effect Of Current">
+            <h2>Genral Principle of Extraction of Metal</h2>
+      
+          
+          </a>
+          <a href="Hydrogen and its Compound.html" class="card blue" aria-label="Learn about Electrostatics">
+              <h2>Hydrogen and its Compound</h2>
+            
+            
+            </a>
+            <a href="S and P Block.html" class="card purple" aria-label="Learn about EMI and AC">
+                <h2>S and P Block</h2>
+                
+              
+              </a>
+              <a href="D nd F Block.html" class="card orange" aria-label="Flueid Mechanics">
+                <h2>D nd F Block</h2>
+               
+              </a>
+              <a href="Coordination Chemistry.html" class="card orange" aria-label="Learn about Magnetic Effect Of current & Magnetism">
+                <h2>Coordination Chemistry</h2>
+             
+              </a>
+              <a href="Chemical Analysis.html" class="card green" aria-label="Learn about Modern Physics">
+                <h2>Chemical Analysis</h2>
+          
+              
+              </a>
+              <a href="General Organic Chemistry.html" class="card orange" aria-label="Learn about Optics">
+                  <h2>General Organic Chemistry</h2>
+               
+                </a>
+                <a href="Hydrocarbons.html" class="card green" aria-label="Learn about Modern Physics">
+                  <h2>Hydrocarbons</h2>
+            
+                
+                </a>
+ 
+  <a href="Halogen Containing Compound.html" class="card blue" aria-label="Learn about Unit,Dimension And Measurement">
+    <h2>Halogen Containing Compound</h2>
+   
+  </a>
+  <a href="Alcohol,Phenol & Ether.html" class="card purple" aria-label="Learn about Motion In One Dimension">
+    <h2>Alcohol,Phenol & Ether</h2>
+    
+
+  </a>
+  <a href="Aldehyde & Ketones.html" class="card orange" aria-label="Motion In Two Dimension">
+    <h2>Aldehyde & Ketones</h2>
+    
+  </a>
+  <a href="Carboxilic Acids And Their Derivatives.html" class="card orange" aria-label="Learn about Newtons Lows Of Motion">
+    <h2>Carboxilic Acids And Their Derivatives</h2>
+ 
+   
+  </a>
+  <a href="Nitrogen Containing Compound.html" class="card green" aria-label="Learn about Friction">
+    <h2>Nitrogen Containing Compound</h2>
+
+  </a>
+  <a href="Polymers.html" class="card blue" aria-label="Learn about Work,Energy,Power and Collision">
+    <h2>Polymers</h2>
+  
+  </a>
+  <a href="Biomolecules.html" class="card purple" aria-label="Learn about Rotational Motion">
+      <h2>Biomolecules</h2>
+      
+    
+    </a>
+   
+
+
+
+
+  </div>
+</body>
+</html>

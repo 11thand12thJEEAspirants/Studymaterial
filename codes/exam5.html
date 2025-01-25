@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Mains Exam Portal</title>
+    <link rel="stylesheet" href="exam.css">
+    
+    
+</head>
+<body>
+    <h1>JEE Mains Exam Portal</h1>
+    <div id="exam-container">
+        <div id="question-area">
+            <div id="timer">Time Remaining: 03:00:00</div>
+            <div id="tabs">
+                <button class="active">Physics</button>
+                <button>Chemistry</button>
+                <button>Mathematics</button>
+            </div>
+            <div id="question-navigation">
+                <button id="prev-question">Previous</button>
+                <button id="next-question">Next</button>
+            </div>
+            <div class="question" data-section="0">
+                <p><strong>Physics Q1:</strong> What is the unit of force?</p>
+                <label><input type="radio" name="physics-q1"> Newton</label>
+                <label><input type="radio" name="physics-q1"> Joule</label>
+                <label><input type="radio" name="physics-q1"> Watt</label>
+                <label><input type="radio" name="physics-q1"> Pascal</label>
+            </div>
+            <div class="question" data-section="0">
+                <p><strong>Physics Q2: </strong> Who is your Father</p>
+                <label><input type="radio" name="physics-q2"> Newton</label>
+                <label><input type="radio" name="physics-q2"> Joule</label>
+                <label><input type="radio" name="physics-q2"> Watt</label>
+                <label><input type="radio" name="physics-q2"> Pascal</label>
+            </div>
+            <div class="question" data-section="0">
+                <p><strong>Physics Q1:</strong> What is Newton’s second law?</p>
+                <label><input type="radio" name="physics-q3"> F = ma</label>
+                <label><input type="radio" name="physics-q3"> E = mc²</label>
+            </div>
+            <div class="question" data-section="1">
+                <p><strong>Chemistry Q1:</strong> What is the atomic number of Hydrogen?</p>
+                <label><input type="radio" name="chemistry-q1"> 1</label>
+                <label><input type="radio" name="chemistry-q1"> 2</label>
+                <label><input type="radio" name="chemistry-q1"> 3</label>
+                <label><input type="radio" name="chemistry-q1"> 4</label>
+            </div>
+            <div class="question" data-section="1">
+                <p><strong>Chemistry Q1:</strong> What is the atomic number of Oxygen?</p>
+                <label><input type="radio" name="chemistry-q2"> 8</label>
+                <label><input type="radio" name="chemistry-q2"> 16</label>
+            </div>
+            <div class="question" data-section="2">
+                <p><strong>Math Q1:</strong> What is the integral of x²?</p>
+                <label><input type="radio" name="math-q1"> x³/3</label>
+                <label><input type="radio" name="math-q1"> 2x</label>
+            </div>
+            <!-- Physics Question Example -->
+
+
+<!-- Chemistry Question Example -->
+
+<!-- Mathematics Question Example -->
+
+
+        </div>
+        <div id="navigation-panel">
+            <h2>Question Navigation</h2>
+            <div id="calendar" class="calendar"></div>
+            <button id="submit-button">Submit Exam</button>
+        </div>
+    </div>
+    <script src="exam.js"></script>
+</body>
+</html>

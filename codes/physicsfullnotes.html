@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemistry Cards</title>
+  <style>
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #7313f9, #bc0090);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Maximum width for larger screens */
+}
+
+.card {
+  background-color: #1b1f2a;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  text-decoration: none; /* Remove underline for links */
+  color: white; /* Ensure text is visible */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.card .topics {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f0e68c; /* Bright yellowish color for visibility */
+}
+
+.card .icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: #1b1f2a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Colors for cards */
+.card.blue {
+  background-color: #3579ff;
+}
+
+.card.purple {
+  background-color: #a442f5;
+}
+
+.card.orange {
+  background-color: #f56a42;
+}
+
+.card.green {
+  background-color: #42f56b;
+}
+
+/* Media Queries for Responsiveness */
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #7313f9, #bc0090);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px; /* Maximum width for larger screens */
+}
+
+.card {
+  background-color: #1b1f2a;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  text-decoration: none; /* Remove underline for links */
+  color: white; /* Ensure text is visible */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin: 15px 0;
+}
+
+.card .topics {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #f0e68c; /* Bright yellowish color for visibility */
+}
+
+.card .icon {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  color: #1b1f2a;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* Colors for cards */
+.card.blue {
+  background-color: #3579ff;
+}
+
+.card.purple {
+  background-color: #a442f5;
+}
+
+.card.orange {
+  background-color: #f56a42;
+}
+
+.card.green {
+  background-color: #42f56b;
+}
+
+/* Media Queries for Responsiveness */
+
+/* For screens smaller than 800px (tablets, large phones) */
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Ensure 2 cards per row even on smaller screens */
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card .topics {
+    font-size: 0.9rem;
+  }
+
+  .card .icon {
+    bottom: 15px;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    font-size: 1rem;
+  }
+}
+
+/* For screens smaller than 600px (small mobile devices) */
+@media (max-width: 600px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Ensure 2 cards per row even on small screens */
+  }
+
+  .card {
+    padding: 12px;
+  }
+
+  .card h2 {
+    font-size: 0.9rem;
+  }
+
+  .card .topics {
+    font-size: 0.8rem;
+  }
+
+  .card .icon {
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* For extra small devices (very small phones) */
+@media (max-width: 400px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr); /* Keep 2 cards per row */
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .card h2 {
+    font-size: 0.8rem;
+  }
+
+  .card .topics {
+    font-size: 0.7rem;
+  }
+
+  .card .icon {
+    bottom: 8px;
+    right: 8px;
+    width: 28px;
+    height: 28px;
+    font-size: 0.8rem;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="unit-and-dimension-notes.html" class="card blue" aria-label="Learn about Unit,Dimension And Measurement">
+      <h2>Unit,Dimension And Measurement</h2>
+     
+      <div class="icon">O</div>
+    </a>
+    <a href="motion-in-one-d-notes.html" class="card purple" aria-label="Learn about Motion In One Dimension">
+      <h2>Motion In One Dimension</h2>
+      
+      <div class="icon">OH</div>
+    </a>
+    <a href="motion-in-2d.html" class="card orange" aria-label="Motion In Two Dimension">
+      <h2>Motion In Two Dimension</h2>
+      <div class="icon">NH</div>
+    </a>
+    <a href="newtons-lows-of-motion-notes.html" class="card orange" aria-label="Learn about Newtons Lows Of Motion">
+      <h2>Newtons Lows Of Motion</h2>
+   
+      <div class="icon">Hex</div>
+    </a>
+    <a href="friction-notes.html" class="card green" aria-label="Learn about Friction">
+      <h2>Friction</h2>
+
+      <div class="icon">B</div>
+    </a>
+    <a href="work-energy-power-notes.html" class="card blue" aria-label="Learn about Work,Energy,Power and Collision">
+      <h2>Work,Energy,Power and Collision</h2>
+    
+      <div class="icon">P</div>
+    </a>
+    <a href="Rotational-Motion-notes.html" class="card purple" aria-label="Learn about Rotational Motion">
+        <h2>Rotational Motion</h2>
+        
+        <div class="icon">OH</div>
+      </a>
+      <a href="Gravitation.html" class="card orange" aria-label="Gravitation">
+        <h2>Gravitation</h2>
+       
+      </a>
+      <a href="Kintetic Theory Of Gases.html" class="card orange" aria-label="Learn about Kintetic Theory Of Gases">
+        <h2>Kintetic Theory Of Gases</h2>
+     
+        <div class="icon">Hex</div>
+      </a>
+      <a href="Thermal Expension, Thermometry and Calometry.html" class="card green" aria-label="Learn about Thermal Expension, Thermometry and Calometry">
+        <h2>Thermal Expension, Thermometry and Calometry</h2>
+  
+      
+      </a>
+
+      <a href="thermodynamics notes.html" class="card blue" aria-label="Learn about Thermodynamics Notes">
+        <h2>thermodynamics notes</h2>
+      
+        <div class="icon">P</div>
+      </a>
+      <a href="Transformation Of Heat.html" class="card purple" aria-label="Learn about Transformation Of Heat">
+          <h2>Transformation Of Heat</h2>
+          
+          <div class="icon">OH</div>
+        </a>
+        <a href="S.H.M.html" class="card orange" aria-label="S.H.M">
+          <h2>S.H.M</h2>
+         
+        </a>
+        <a href="Wave Motion.html" class="card orange" aria-label="Learn about Wave Motion">
+          <h2>Wave Motion</h2>
+       
+          <div class="icon">Hex</div>
+        </a>
+        <a href="Current and Heating Effect Of Current.html" class="card green" aria-label="Learn about Current and Heating Effect Of Current">
+          <h2>Current and Heating Effect Of Current</h2>
+    
+        
+        </a>
+        <a href="Electrostatics.html" class="card blue" aria-label="Learn about Electrostatics">
+            <h2>Electrostatics</h2>
+          
+            <div class="icon">P</div>
+          </a>
+          <a href="EMI and AC.html" class="card purple" aria-label="Learn about EMI and AC">
+              <h2>EMI and AC</h2>
+              
+              <div class="icon">OH</div>
+            </a>
+            <a href="Flueid Mechanics.html" class="card orange" aria-label="Flueid Mechanics">
+              <h2>Flueid Mechanics</h2>
+             
+            </a>
+            <a href="Magnetic Effect Of current & Magnetism.html" class="card orange" aria-label="Learn about Magnetic Effect Of current & Magnetism">
+              <h2>Magnetic Effect Of current & Magnetism</h2>
+           
+              <div class="icon">Hex</div>
+            </a>
+            <a href="Modern Physics.html" class="card green" aria-label="Learn about Modern Physics">
+              <h2>Modern Physics</h2>
+        
+            
+            </a>
+            <a href="Optics.html" class="card orange" aria-label="Learn about Optics">
+                <h2>Optics</h2>
+             
+                <div class="icon">Hex</div>
+              </a>
+              <a href="Modern Physics.html" class="card green" aria-label="Learn about Modern Physics">
+                <h2>Modern Physics</h2>
+          
+              
+              </a>
+  
+
+
+
+
+
+  </div>
+</body>
+</html>

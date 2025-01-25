@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Solved Question Papers</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #7313f9, #bc0090);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .card {
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            position: relative;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-sizing: border-box;
+        }
+
+        .card.blue {
+            background-color: #3579ff;
+        }
+
+        .card.purple {
+            background-color: #a442f5;
+        }
+
+        .card.orange {
+            background-color: #f56a42;
+        }
+
+        .card.green {
+            background-color: #42f56b;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 15px;
+            }
+
+            .card h2 {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                padding: 10px;
+            }
+
+            .card h2 {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="2024.html" class="card blue">
+            <h2>2024</h2>
+        </a>
+        <a href="2023.html" class="card purple">
+            <h2>2023</h2>
+        </a>
+        <a href="2022.html" class="card orange">
+            <h2>2022</h2>
+        </a>
+        <a href="2021.html" class="card green">
+            <h2>2021</h2>
+        </a>
+        <a href="2020.html" class="card blue">
+            <h2>2020</h2>
+        </a>
+        <a href="2019.html" class="card purple">
+            <h2>2019</h2>
+        </a>
+        <a href="2018.html" class="card orange">
+            <h2>2018</h2>
+        </a>
+        <a href="2017.html" class="card green">
+            <h2>2017</h2>
+        </a>
+    </div>
+</body>
+</html>

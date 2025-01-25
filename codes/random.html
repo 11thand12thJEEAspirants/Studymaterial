@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCM Study Material</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Welcome to PCM Study Material</h1>
+    <div class="buttons">
+        <a href="class11.html" class="btn">Class 11</a>
+        <a href="class12.html" class="btn">Class 12</a>
+    </div>
+    <footer>Designed for Students of Class 11 and 12 - Physics, Chemistry, Mathematics</footer>
+</body>
+</html>
+
+<!-- Class 11 Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Study Material</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Class 11 Study Material</h1>
+    <div class="buttons">
+        <a href="physics11.html" class="btn">Physics</a>
+        <a href="chemistry11.html" class="btn">Chemistry</a>
+        <a href="mathematics11.html" class="btn">Mathematics</a>
+    </div>
+    <footer>
+        <div class="back-home">
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- Class 12 Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Study Material</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Class 12 Study Material</h1>
+    <div class="buttons">
+        <a href="physics12.html" class="btn">Physics</a>
+        <a href="chemistry12.html" class="btn">Chemistry</a>
+        <a href="mathematics12.html" class="btn">Mathematics</a>
+    </div>
+    <footer>
+        <div class="back-home">
+            <a href="index.html" class="btn">Back to Home</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- Example Subject Page: Physics 11 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 11 Physics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Physics - Class 11</h1>
+    <ul class="notes-list">
+        <li><a href="notes/class11/physics/chapter1.pdf" class="btn">Chapter 1: Physical World</a></li>
+        <li><a href="notes/class11/physics/chapter2.pdf" class="btn">Chapter 2: Units and Measurements</a></li>
+        <li><a href="notes/class11/physics/chapter3.pdf" class="btn">Chapter 3: Motion in a Straight Line</a></li>
+    </ul>
+    <footer>
+        <div class="back-home">
+            <a href="class11.html" class="btn">Back to Class 11</a>
+        </div>
+    </footer>
+</body>
+</html>
+
+<!-- CSS (style.css) -->
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #FF7F50, #32CD32);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.notes-list .btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+    position: relative;
+    bottom: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
+
+.back-home {
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .notes-list {
+        width: 100%;
+    }
+}

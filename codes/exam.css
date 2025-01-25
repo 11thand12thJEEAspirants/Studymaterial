@@ -1,0 +1,248 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    background-color: #388E3C;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Exam Container Layout */
+#exam-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows for wrapping on smaller screens */
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+#question-area {
+    flex: 3;
+    padding: 20px;
+    border-right: 2px solid #ddd;
+    min-width: 60%; /* Ensures it takes up more space on wider screens */
+}
+
+#navigation-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+    position: sticky;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 250px;
+}
+
+/* Calendar */
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    width: 100%;
+    justify-items: center;
+}
+
+.calendar button {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.calendar button:hover {
+    transform: scale(1.1);
+    background-color: #66BB6A;
+}
+
+.answered {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.unanswered {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Tabs */
+#tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#tabs button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#tabs button.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Questions */
+.question {
+    display: none;
+}
+
+.question.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+/* Timer */
+#timer {
+    font-size: 20px;
+    color: #f44336;
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+#submit-button {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+#submit-button:hover {
+    background-color: #1e88e5;
+}
+
+/* Responsive Design for Different Screen Sizes */
+
+/* For medium to large screens (tablets and desktops) */
+@media (max-width: 1200px) {
+    #exam-container {
+        flex-direction: column; /* Stacks question area and navigation panel */
+    }
+
+    #question-area {
+        min-width: 100%; /* Takes full width */
+        border-right: none; /* Removes the border between the two sections */
+    }
+
+    #navigation-panel {
+        min-width: 100%; /* Makes the navigation panel stack below the question area */
+    }
+
+    /* Calendar adjusts to fewer columns */
+    #calendar {
+        grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    }
+}
+
+/* For smaller devices (tablets and smaller screens) */
+@media (max-width: 768px) {
+    #exam-container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    #question-area {
+        min-width: 100%;
+        padding: 10px; /* Smaller padding for small screens */
+    }
+
+    #navigation-panel {
+        min-width: 100%;
+        padding: 10px; /* Smaller padding for small screens */
+    }
+
+    #tabs {
+        flex-direction: column; /* Stack tabs vertically */
+    }
+
+    #tabs button {
+        padding: 8px; /* Smaller padding */
+        font-size: 14px;
+    }
+
+    #submit-button {
+        width: 100%; /* Full-width submit button */
+        padding: 12px; /* Larger padding */
+    }
+
+    /* Calendar adjusts to fewer columns */
+    #calendar {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+
+    .calendar button {
+        font-size: 14px; /* Smaller font for calendar buttons */
+    }
+}
+
+/* For very small devices (mobile screens) */
+@media (max-width: 480px) {
+    h1 {
+        padding: 10px; /* Smaller header padding */
+    }
+
+    #exam-container {
+        margin: 10px;
+    }
+
+    #question-area {
+        padding: 8px; /* Smaller padding */
+    }
+
+    #navigation-panel {
+        padding: 8px; /* Smaller padding */
+    }
+
+    #tabs button {
+        padding: 6px; /* Smaller padding */
+        font-size: 12px;
+    }
+
+    #submit-button {
+        padding: 14px; /* Larger padding */
+        font-size: 14px;
+    }
+
+    /* Calendar adjusts to 2 columns */
+    #calendar {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+
+    .calendar button {
+        width: 30px; /* Smaller button size */
+        height: 30px;
+        font-size: 12px; /* Smaller font */
+    }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>physics2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #7313f9, #bc0090);
+      color: white;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 800px;
+    }
+
+    .card {
+      background-color: #1f2937;
+      border-radius: 12px;
+      padding: 20px;
+      position: relative;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 150px;
+      transition: transform 0.3s;
+      text-decoration: none; /* Remove underline for links */
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card .title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .card .topics {
+      margin-top: 5px;
+      font-size: 14px;
+      color: #a0aec0;
+    }
+
+    .card .icon {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      background-color: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #1f2937;
+      font-size: 20px;
+    }
+
+    .blue {
+      background-color: #2563eb;
+    }
+
+    .red {
+      background-color: #f43f5e;
+    }
+
+    .yellow {
+      background-color: #f59e0b;
+    }
+
+    .large {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="electrostatics.html" class="card blue">
+      <div>
+        <div class="title">Electrostatics</div>
+        <div class="topics">8 Topics</div>
+      </div>
+      <div class="icon">⚡</div>
+    </a>
+    <a href="current-electricity.html" class="card blue">
+      <div>
+        <div class="title">Current Electricity</div>
+        <div class="topics">9 Topics</div>
+      </div>
+      <div class="icon">🔋</div>
+    </a>
+    <a href="electromagnetic-induction.html" class="card blue">
+      <div>
+        <div class="title">Electromagnetic Induction</div>
+        <div class="topics">11 Topics</div>
+      </div>
+      <div class="icon">🔄</div>
+    </a>
+    <a href="alternating-current.html" class="card red">
+      <div>
+        <div class="title">Alternating Current</div>
+        <div class="topics">2 Topics</div>
+      </div>
+      <div class="icon">~</div>
+    </a>
+    <a href="thermodynamics.html" class="card yellow">
+      <div>
+        <div class="title">Thermodynamics</div>
+        <div class="topics">4 Topics</div>
+      </div>
+      <div class="icon">🔥</div>
+    </a>
+    <a href="ray-optics.html" class="card blue large">
+      <div>
+        <div class="title">Ray Optics</div>
+        <div class="topics">9 Topics</div>
+      </div>
+      <div class="icon">🌈</div>
+    </a>
+  </div>
+</body>
+</html>

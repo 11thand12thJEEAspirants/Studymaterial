@@ -1,0 +1,155 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #7313f9, #bc0090);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Button Styling */
+.btn {
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgba(201, 2, 125, 0.778);
+    background-color: rgba(21, 200, 45, 0.889);
+}
+
+/* Owner Photos Section */
+.owner-photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Adjust for different screen ratios */
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.owner-photo {
+    width: 220px; /* Increased size */
+    height: 220px; /* Increased size */
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 2px 2px 15px rgba(27, 255, 2, 0.786);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.owner-photo:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 20px rgb(180, 11, 118);
+}
+
+.owner-photo p {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styling for All Ratios */
+@media (max-width: 1024px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .owner-photo {
+        width: 180px;
+        height: 180px;
+    }
+
+    .owner-photo p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .owner-photos {
+        flex-direction: column; /* Stack images vertically */
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+
+    .owner-photo {
+        width: 150px;
+        height: 150px;
+    }
+
+    .owner-photo p {
+        font-size: 1rem;
+    }
+}
+
+/* Additional Styles for Buttons Section */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.notes-list .btn {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Footer Section */
+footer {
+    position: relative;
+    bottom: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+}
